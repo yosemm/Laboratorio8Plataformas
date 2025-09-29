@@ -8,11 +8,8 @@ import androidx.compose.material3.NavigationBarItemDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavController
 import androidx.navigation.compose.currentBackStackEntryAsState
-import androidx.navigation.compose.rememberNavController
-import com.uvg.laboratorio8.ui.theme.Laboratorio8Theme
 
 @Composable
 fun BottomNavigationBar(navController: NavController) {
@@ -45,14 +42,5 @@ fun BottomNavigationBar(navController: NavController) {
                 )
             )
         }
-    }
-}
-
-@Preview(showBackground = true)
-@Composable
-fun BottomNavigationBarPreview() {
-    Laboratorio8Theme {
-        val navController = rememberNavController()
-        BottomNavigationBar(navController = navController)
     }
 }
